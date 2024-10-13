@@ -8,3 +8,7 @@ fun uppercaseString(string: String): String{
 }
 
 // Dapat ditulis dalam ekspresi lambda sebagai berikut:
+fun main(){
+    uppercaseString("Hello")
+    println({ string: String -> string.uppercase() }("Hello")) //HELLO
+}
