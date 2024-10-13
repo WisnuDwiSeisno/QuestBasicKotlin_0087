@@ -1,5 +1,7 @@
 package com.example.project1
 
+import android.provider.ContactsContract.Data
+
 // Data class
 // Data class adalah class yang digunakan untuk menyimpan data.
 // Data class menyediakan fungsi untuk meng-override fungsi equals(), hashCode(), dan toString().
@@ -14,5 +16,7 @@ fun main (){
     val data = DataClass(1, "indra@gmail.com")
     println(data)
 
-
+    // fungsi Equals
+    val data2 = DataClass(1, "makan@gmail.com")
+    println(data == data2) //false
 }
