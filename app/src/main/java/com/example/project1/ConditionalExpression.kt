@@ -1,5 +1,7 @@
 package com.example.project1
 
+import java.lang.NumberFormatException
+
 fun ConditionalStatement(){
     println("=== Conditional Expression ===")
 
@@ -25,4 +27,13 @@ fun ConditionalStatement(){
     }
 
     // Try-Catch
+    val value = "10"
+    try {
+        val result = value.toInt()
+        println("Result: $result")
+    } catch (e: NumberFormatException){
+        println("Invalid Number")
+    }
+
+
 }
