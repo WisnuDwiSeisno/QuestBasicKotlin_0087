@@ -32,3 +32,7 @@ fun NullSafety(){
 
     println(strLength(neverNull)) //18
 }
+
+fun main (){
+    NullSafety()
+}
